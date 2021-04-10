@@ -17,7 +17,7 @@ var routes = function () {
 
                 
                 var sqlQuery = "SELECT * FROM Event_details";
-                console.log("sqlQuery")
+               // console.log("sqlQuery")
                 var req = new sql.Request(conn);
                 req.query(sqlQuery).then(function (recordset) {
                     res.json(recordset);
